@@ -757,16 +757,17 @@ Common Style CSS
     transition: background 0s ease-in-out 0s, margin-top 0s ease-in-out 0s, opacity 0s ease-in-out 0s;
 }
 .header-sticky.is-sticky {
-	background: rgba(255,255,255,.85);
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 999;
-	box-shadow: 0 8px 6px -6px rgba(0,0,0,.4);
-	-webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-	        animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    background: rgba(255,255,255,1); /* Changed the alpha to 1 for solid white */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 8px 6px -6px rgba(0,0,0,.4);
+    -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
+
 .header-sticky.is-sticky.header-bottom-area {
 	padding-top: 0px;
 }
